@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",                       // Chỉ định phiên bản JavaScript output. ES2020 hỗ trợ tốt async/await.
+    "module": "commonjs",                     // Hệ thống module sử dụng. 'commonjs' là tiêu chuẩn của Node.js.
+    "lib": ["ES2020"],                        // Các thư viện chuẩn của JS được include khi biên dịch.
+
+    /* Strict Type-Checking Options */
+    "strict": true,                           // Bật tất cả các tùy chọn kiểm tra type nghiêm ngặt. Giúp code an toàn hơn.
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",               // Cách trình biên dịch tìm kiếm module. 'node' là mặc định cho Node.js.
+    "esModuleInterop": true,                  // Cho phép tương tác tốt hơn giữa module CommonJS và ES Modules.
+
+    /* Advanced Options */
+    "skipLibCheck": true,                     // Bỏ qua việc kiểm tra type của các file thư viện (.d.ts).
+    "forceConsistentCasingInFileNames": true, // Đảm bảo tên file được tham chiếu một cách nhất quán.
+
+    /* TypeORM Specific */
+    "experimentalDecorators": true,           // Bật tính năng Decorator, rất quan trọng cho TypeORM.
+    "emitDecoratorMetadata": true,            // Phát ra metadata về type, cần thiết để TypeORM biết kiểu dữ liệu của các thuộc tính trong Entity.
+
+    /* Project Structure */
+    "rootDir": "./src",                       // Thư mục gốc chứa code TypeScript.
+    "outDir": "./dist"                        // Thư mục chứa code JavaScript sau khi biên dịch.
+  },
+  "include": ["src/**/*"],                     // Chỉ biên dịch các file trong thư mục 'src'.
+  "exclude": ["node_modules"]                 // Loại trừ thư mục 'node_modules'.
+}
