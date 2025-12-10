@@ -10,8 +10,8 @@ export const dataSourceOptions: DataSourceOptions = {
   database: process.env.DB_DATABASE,
   logging: true,
   synchronize: true,
-  entities: ["dist/entities/**/*.js"], // Đường dẫn tới các file entity đã được biên dịch sang JS.
-  migrations: ["dist/migrations/**/*.js"], // Đường dẫn tới các file migration đã được biên dịch.
+  entities: ["src/entities/**/*.ts"], // Đường dẫn tới các file entity đã được biên dịch sang JS.
+  migrations: ["src/migrations/**/*.ts"], // Đường dẫn tới các file migration đã được biên dịch.
 };
 
 const AppDataSource = new DataSource(dataSourceOptions);
