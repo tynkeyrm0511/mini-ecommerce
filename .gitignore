@@ -1,0 +1,6 @@
+node_modules
+/src/generated/prisma
+# Private files
+PROJECT_CONTEXT.md 
+AI_TEACHER_PROMPT.md
+.env
